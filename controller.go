@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 	"strconv"
-	"time"
 )
 
 // showLib handles requests to display the library
