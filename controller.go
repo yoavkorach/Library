@@ -35,10 +35,6 @@ func rentBook(w http.ResponseWriter, r *http.Request) {
 	}
 	if rented {
 		fmt.Fprintf(w, "Rented book %s", name)
-		go func() {
-			time.Sleep(10 * time.Second)
-			fmt.Fprintf(w, "Time to return the book '%s'!\n", name)
-		}()
 		return
 	}
 }
